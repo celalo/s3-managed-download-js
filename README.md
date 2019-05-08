@@ -8,7 +8,7 @@ The JavaScript SDK Managed Download can be used for custom S3 downloads. The cli
 
 This package only works in Node.js versions 6+ currently. Use the npm package manager for Node.js to install the Managed Download package. Type the following command in a terminal window.
 
-        npm install @aws/s3-managed-download
+        npm install @aws/s3-managed-downloader
 
 ## Documentation
 
@@ -25,12 +25,12 @@ You will need an S3 client in order to create a managed download, so import the 
 #### JavaScript
 
         const S3 = require('aws-sdk/clients/s3');
-        const ManagedDownloader = require('@aws/s3-managed-download').ManagedDownloader;
+        const ManagedDownloader = require('@aws/s3-managed-downloader').ManagedDownloader;
 
 #### TypeScript
 
         import * as S3 from 'aws-sdk/clients/s3';
-        import { ManagedDownloader, GetObjectStreamInput, ManagedDownloaderOptions } from '@aws/s3-managed-download';
+        import { ManagedDownloader, GetObjectStreamInput, ManagedDownloaderOptions } from '@aws/s3-managed-downloader';
 
 ### Create a Managed Download with the default part size and concurrency
 
@@ -82,7 +82,7 @@ Get the file 'example-key' from the bucket 'example-bucket' and use the getObjec
 #### JavaScript
 
         const S3 = require('aws-sdk/clients/s3');
-        const ManagedDownloader = require('@aws/s3-managed-download').ManagedDownloader;
+        const ManagedDownloader = require('@aws/s3-managed-downloader').ManagedDownloader;
         const fs = require('fs');
 
         const s3 = new S3();
@@ -106,7 +106,7 @@ Get the file 'example-key' from the bucket 'example-bucket' and use the getObjec
 #### TypeScript
 
         import * as S3 from 'aws-sdk/clients/s3';
-        import { ManagedDownloader, GetObjectStreamInput, ManagedDownloaderOptions } from '@aws/s3-managed-download';
+        import { ManagedDownloader, GetObjectStreamInput, ManagedDownloaderOptions } from '@aws/s3-managed-downloader';
         import * as fs from 'fs';
 
         const s3:S3 = new S3();
@@ -134,7 +134,7 @@ Get the file 'example-key' from the bucket 'example-bucket' and use the getObjec
 #### JavaScript
 
         const S3 = require('aws-sdk/clients/s3');
-        const ManagedDownloader = require('@aws/s3-managed-download').ManagedDownloader;
+        const ManagedDownloader = require('@aws/s3-managed-downloader').ManagedDownloader;
         const fs = require('fs');
         
         const s3 = new S3();
@@ -159,7 +159,7 @@ Get the file 'example-key' from the bucket 'example-bucket' and use the getObjec
 #### TypeScript
 
         import * as S3 from 'aws-sdk/clients/s3';
-        import { ManagedDownloader, GetObjectStreamInput, ManagedDownloaderOptions } from '@aws/s3-managed-download';
+        import { ManagedDownloader, GetObjectStreamInput, ManagedDownloaderOptions } from '@aws/s3-managed-downloader';
         import * as fs from 'fs';
 
         const s3:S3 = new S3();
